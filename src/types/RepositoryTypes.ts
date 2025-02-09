@@ -1,4 +1,8 @@
  export interface Repository <T=unknown> {
     create(data: T): Promise<T>;
-    find():Promise<T[]>
+    find(query?:Query):Promise<T[]>
+    findById(id:string): Promise<T | null>
+    delete(id:string): Promise<boolean>
+    update(id:string, data: Partial<T>): Promise<T | null>
  }
+ export type Query = Record<string,unknown>

@@ -1,0 +1,23 @@
+POST http://localhost:4000/api/v1/users HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OWZiNTNkNzI3M2FmNWFjMTRhZTg1NyIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTczODg2NjIzOSwiZXhwIjoxNzM4ODY5ODM5fQ.WS28IVPbA6-buDdc7reu8d12JM9PonR7Uye8Y39WtXA
+
+{
+    "name": "Jhon Doe",
+    "username": "JhonDoe",
+    "email": "jhonDoe@test.com",
+    "password": "123456"
+
+}
+###
+GET  http://localhost:4000/api/v1/users/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OWZiNTNkNzI3M2FmNWFjMTRhZTg1NyIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTczODk2MTE4MSwiZXhwIjoxNzM4OTY0NzgxfQ.aPBq6CV08kZmfrE1ccEg1cOcnPp1K0Mcv952_rOSnbI
+
+###
+PUT http://localhost:4000/api/v1/users/67a504a052035bc282b987ea HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OWZiNTNkNzI3M2FmNWFjMTRhZTg1NyIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTczOTEyNjA4OCwiZXhwIjoxNzM5MTI5Njg4fQ.A5B1hSIseCPbHtdCKhq8Yq2nFIvbarSqjl8dca3ioZM
+
+{
+    "name": "JhonDoe"  
+}
